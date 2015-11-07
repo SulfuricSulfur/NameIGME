@@ -101,7 +101,7 @@ public class Player
         takeAway = Math.Ceiling(takeAway);
 
         //While the fruit to drop is greater than zero, keep dropping and adjusting
-        while(takeAway > 0)
+        while(itemArray.Length >0)
         {
             itemArray[fruitPos] = null;
             fruitPos--;
