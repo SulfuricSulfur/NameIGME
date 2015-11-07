@@ -7,9 +7,9 @@ namespace MarketGame1
 {
     public class Fruits
     {
-        private double weight { get; set }
-        private string name { get; set };   
-        private int pointvalue { get; set };
+        protected double weight { get; set;}
+        protected string name { get; set;}
+        protected int pointvalue { get; set;}
 
        
         public Fruits(double wt, string nme, int pv)
