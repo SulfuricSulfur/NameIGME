@@ -1,5 +1,6 @@
 ﻿using System;
 
+
 namespace MarketGame1
 {
 #if WINDOWS || LINUX
