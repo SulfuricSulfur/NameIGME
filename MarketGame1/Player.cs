@@ -13,6 +13,7 @@ public class Player
     private int currSpeed;
     private Fruits[] itemArray = new Fruits[6];
     private int points;
+    private bool hasJumped;
 
     //Int to keep track of position in the Fruit Array
     int fruitPos = 0;
@@ -39,7 +40,7 @@ public class Player
     }
 
     //Method for adding an item
-    public void AddItem(Fruits fruit)
+    public void PickUpFruit(Fruits fruit)
     {
         //Checking each array spot to see if it is empty
         if(itemArray[0] == null)
@@ -66,6 +67,11 @@ public class Player
             fruitPos = 4;
             itemArray[4] = fruit;
         }
+        else if (itemArray[5] == null)
+        {
+            fruitPos = 5;
+            itemArray[5] = fruit;
+        }
 
         //If the array is full, tell the player
         else
@@ -86,5 +92,30 @@ public class Player
             fruitPos = fruitPos - 1;
         }
     }
+
+    //If you get hit by a fruit method
+    public void GetStunned()
+    {
+        //Seeing how many fruits to drop
+        int takeAway = (int)Math.Round((double)(fruitPos / 2), MidpointRounding.AwayFromZero);
+
+        //While the fruit to drop is greater than zero, keep dropping and adjusting
+        while(takeAway > 0)
+        {
+            itemArray[fruitPos] = null;
+            fruitPos = fruitPos - 1;
+            takeAway = takeAway - 1;
+        }
+    }
+
+    //Turning in the fruit
+    public void TurnInFruit()
+    {
+        foreach(Fruits fruit in itemArray)
+        {
+            if()
+        }
+    }
+    
 }
 
