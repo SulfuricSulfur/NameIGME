@@ -11,23 +11,22 @@ namespace MarketGame1
         private string name;
         private int pointvalue;
 
-        public int PointValue
+        public double Weight
+        {
+            get { return weight; }
+            set { weight= value; }
+        }
+        public int Pointvalue
         {
             get { return pointvalue; }
             set { pointvalue = value; }
         }
-        
-        public double Weight
-        {
-            get { return weight; }
-            set { weight = value; }
-        }
 
         public string Name
         {
-            get { return name; }
-            set { name = value; }
+            get { return Name; }
+            set { Name= value; }
         }
-        
+
     }
 }

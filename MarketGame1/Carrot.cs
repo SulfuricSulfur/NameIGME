@@ -5,13 +5,13 @@ using System.Text;
 
 namespace MarketGame1
 {
-    public class Apple :Fruits
+    public class Carrot :Fruits
     {
-        public Apple()
+        public Carrot()
         {
             this.Weight = 1;
-            this.Name = "Apple";
-            this.Pointvalue = 10;
+            this.Name = "Carrot";
+            this.Pointvalue = 5;
         }
 
     }
