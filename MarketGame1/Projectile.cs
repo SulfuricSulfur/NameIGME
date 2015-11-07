@@ -10,7 +10,8 @@ namespace MarketGame1
 
         //Projectile variables
         private double speed;
-        private double position;
+        private int x;
+        private int y;
 
         //Speed property
         public double Speed
@@ -20,10 +21,10 @@ namespace MarketGame1
         }
 
         //Position property
-        public double Position
+        public int X
         {
-            get { return position; }
-            set { position = value; }
+            get { return x; }
+            set { x = value; }
         }
 
         //Default constructor
@@ -31,9 +32,10 @@ namespace MarketGame1
         { }
 
         //Constructor for position value.
-        public Projectile(int pos)
+        public Projectile(int xPos,int yPos)
         {
-            this.position = pos;
+            x = xPos;
+            y = yPos;
         }
     }
 }
