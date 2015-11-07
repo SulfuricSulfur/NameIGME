@@ -2,30 +2,21 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Content;
+using Microsoft.Xna.Framework.Graphics;
+using Microsoft.Xna.Framework.Input;
+using Microsoft.Xna.Framework.Storage;
 
 namespace MarketGame1
 {
-    /// <summary>
-    /// This class contains platforms, platforms can be stood upon and have a position. Set their rect to their width and height at the position given.
-    /// </summary>
     class Platform
     {
-        int x;
-        int y;
-        int width;
-        int height;
+        private Rectangle platRect;
 
-        public Platform(int xPos,int yPos, int widthSet, int heightSet)
+        public Platform(int x, int y, int w, int h)
         {
-            x = xPos;
-            y = yPos;
-            width = widthSet;
-            height = heightSet;
+            platRect = new Rectangle(x, y, w, h);
         }
-
-
-
-
-
     }
 }

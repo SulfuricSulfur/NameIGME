@@ -44,6 +44,16 @@ public class Player
         points = 0;
     }
 
+    //Override ToString to print player stats
+    public override string ListPlayer()
+    {
+        foreach(Fruits fruit in itemArray)
+        {
+            Console.WriteLine("Fruit in Array: " + fruit + "\n");
+        }
+        return "Current Speed: " + currSpeed + " Max Speed: " + MAXSPEED + " Points: " + points;
+    }
+
     //Method for adding an item
     public void PickUpFruit(Fruits fruit)
     {
@@ -120,8 +130,8 @@ public class Player
         foreach(Fruits fruit in itemArray)
         {
             switch(fruit.Name)
-            { 
-}
+            {
+            }
         }
     }
     

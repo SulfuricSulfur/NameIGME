@@ -50,7 +50,9 @@
     <Compile Include="Grape_Projectile.cs" />
     <Compile Include="Orange.cs" />
     <Compile Include="Orange_Projectile.cs" />
+    <Compile Include="Platform.cs" />
     <Compile Include="Player.cs" />
+    <Compile Include="PlayerTestClass.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Projectile.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
