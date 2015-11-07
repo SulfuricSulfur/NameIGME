@@ -9,7 +9,7 @@ namespace MarketGame1
     {
         public Apple_Projectile()
         {
-            this.Speed
+            this.Speed = 5;
         }
     }
 }
