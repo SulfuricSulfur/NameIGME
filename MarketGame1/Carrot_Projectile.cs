@@ -5,9 +5,9 @@ using System.Text;
 
 namespace MarketGame1
 {
-    class Apple_Projectile:Projectile
+    class Carrot_Projectile:Projectile
     {
-        public Apple_Projectile()
+        public Carrot_Projectile()
         {
             this.Speed = 5;
         }
