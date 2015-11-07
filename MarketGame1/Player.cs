@@ -97,14 +97,15 @@ public class Player
     public void GetStunned()
     {
         //Seeing how many fruits to drop
-        int takeAway = (int)Math.Round((double)(fruitPos / 2), MidpointRounding.AwayFromZero);
+        double takeAway = fruitPos/ 2;
+        takeAway = Math.Ceiling(takeAway);
 
         //While the fruit to drop is greater than zero, keep dropping and adjusting
         while(takeAway > 0)
         {
             itemArray[fruitPos] = null;
-            fruitPos = fruitPos - 1;
-            takeAway = takeAway - 1;
+            fruitPos--;
+            takeAway--;
         }
     }
 
@@ -113,7 +114,9 @@ public class Player
     {
         foreach(Fruits fruit in itemArray)
         {
-            if()
+            switch(fruit.Name)
+            { 
+}
         }
     }
     
