@@ -7,19 +7,26 @@ namespace MarketGame1
 {
     public class Fruits
     {
-        protected double weight { get; set;}
-        protected string name { get; set;}
-        protected int pointvalue { get; set;}
+        private double weight;
+        private string name;
+        private int pointvalue;
 
-        public Fruits()
+        public double Weight
         {
+            get { return weight; }
+            set { weight= value; }
+        }
+        public int Pointvalue
+        {
+            get { return pointvalue; }
+            set { pointvalue = value; }
+        }
 
-        }
-        public Fruits(double wt, string nme, int pv)
+        public string Name
         {
-            this.weight = wt;
-            this.name = nme;
-            this.pointvalue = pv;
+            get { return Name; }
+            set { Name= value; }
         }
+
     }
 }

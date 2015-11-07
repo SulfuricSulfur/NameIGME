@@ -7,6 +7,7 @@ namespace MarketGame1
 {
     public class Banana :Fruits
     {
+        
         public Banana()
         {
             this.weight = 2;

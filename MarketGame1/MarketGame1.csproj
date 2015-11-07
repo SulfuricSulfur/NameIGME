@@ -39,6 +39,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Apple.cs" />
+    <Compile Include="Apple_Projectile.cs" />
     <Compile Include="Banana.cs" />
     <Compile Include="Carrot.cs" />
     <Compile Include="Fruits.cs" />
@@ -47,6 +48,7 @@
     <Compile Include="Orange.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="Program.cs" />
+    <Compile Include="Projectile.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Watermelon.cs" />
   </ItemGroup>

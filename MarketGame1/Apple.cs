@@ -9,9 +9,9 @@ namespace MarketGame1
     {
         public Apple()
         {
-            this.weight = 1;
-            this.name = "Apple";
-            this.pointvalue = 10;
+            this.Weight = 1;
+            this.Name = "Apple";
+            this.Pointvalue = 10;
         }
 
     }
