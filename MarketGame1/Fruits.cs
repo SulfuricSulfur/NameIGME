@@ -12,10 +12,13 @@ namespace MarketGame1
 {
     public class Fruits
     {
+        //Fruit attributes
         private double weight;
         private string name;
         private int pointvalue;
+        private Rectangle rect;
 
+        //Properties for each attribute
         public double Weight
         {
             get { return weight; }
@@ -33,5 +36,18 @@ namespace MarketGame1
             set { Name= value; }
         }
 
+        public Rectangle Rect
+        {
+            get { return rect; }
+            set { rect = value; }
+        }
+        public Fruits()
+        {
+
+        }
+        public Fruits(int x, int y, int w, int h)
+        {
+            this.rect = new Rectangle(x, y, w, h);
+        }
     }
 }
