@@ -81,7 +81,10 @@ public class Player
         itemArray[fruitPos] = null;
 
         //Adjusting fruit position
-        fruitPos = fruitPos - 1;
+        if (fruitPos != 0)
+        {
+            fruitPos = fruitPos - 1;
+        }
     }
 }
 

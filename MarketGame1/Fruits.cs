@@ -11,7 +11,10 @@ namespace MarketGame1
         protected string name { get; set;}
         protected int pointvalue { get; set;}
 
-       
+        public Fruits()
+        {
+
+        }
         public Fruits(double wt, string nme, int pv)
         {
             this.weight = wt;
