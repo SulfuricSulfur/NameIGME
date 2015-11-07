@@ -36,9 +36,9 @@ namespace MarketGame1
         { }
 
         //Constructor for position value.
-        public Projectile(int x,int y, int w,int h)
+        public Projectile(int x, int y, int w, int h)
         {
-            projRect = new Rectangle(x, y, w, h);
+            this.projRect = new Rectangle(x, y, w, h);
         }
     }
 }
