@@ -11,6 +11,7 @@ namespace MarketGame1
         private string name;
         private int pointvalue;
 
+
         public int PointValue
         {
             get { return pointvalue; }
@@ -29,5 +30,9 @@ namespace MarketGame1
             set { name = value; }
         }
         
+        public Fruits()
+        {
+
+        }
     }
 }
